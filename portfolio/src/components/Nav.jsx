@@ -1,14 +1,23 @@
 import React from 'react'
+import { FaHouseChimney, FaFileLines, FaGear } from "react-icons/fa6";
 
 const Nav = () => {
+  let iconStyle = { color: "#1a1918", fontSize: "1.5em", margin: "0 auto" };
+  let classStyles= "h-16 bg-[#a5a8a7] text-[#1a1918] w-3/12 border-1 rounded-lg p-3 font-medium"
   return (
     <div>
-        <div className="h-24 border-2 rounded-lg border-rose-700 p-5 bg-[#1b1817] w-96">
-            <div className="flex justify-evenly">
-                <FontAwesomeIcon icon="fa-solid fa-house" />
-                <p className=" h-12 bg-[#79828c] text-[#fdfdfd] w-3/12 border-1 rounded-lg">Home</p>
-                <p className=" h-12 bg-[#79828c] text-[#fdfdfd] w-3/12 border-1 rounded-lg">Resume</p>
-                <p className=" h-12 bg-[#79828c] text-[#fdfdfd] w-3/12 border-1 rounded-lg">Projects</p>
+        <div className=" h-26 rounded-xl p-5 bg-[#3b3938] w-96 flex justify-evenly">
+            <div className={classStyles}>
+              <FaHouseChimney style={iconStyle}/>
+              <p>Home</p>
+            </div>
+            <div className={classStyles}>
+              <FaFileLines style={iconStyle}/>
+              <p>Resume</p>
+            </div>
+            <div className={classStyles}>
+              <FaGear style={iconStyle}/>
+              <p>Projects</p>
             </div>
         </div>
     </div>
