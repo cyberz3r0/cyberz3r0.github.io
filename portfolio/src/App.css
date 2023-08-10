@@ -5,3 +5,6 @@
   /* text-align: center; */
 }
 
+.min{
+  min-width: 468px;
+}

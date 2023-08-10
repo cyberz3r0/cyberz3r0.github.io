@@ -7,7 +7,7 @@ const Summary = () => {
   return (
     <div>
         <div className="flex justify-center">
-            <div className="max-w-md mr-10">
+            <div className="max-w-md min mr-10">
                 <SideProfile />
             </div>
             <div className="max-w-screen-lg">
