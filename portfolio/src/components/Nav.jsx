@@ -9,15 +9,15 @@ const Nav = () => {
         <div className=" h-26 rounded-xl p-5 bg-[#3b3938] w-96 flex justify-evenly">
             <div className={classStyles}>
               <FaHouseChimney style={iconStyle}/>
-              <p>Home</p>
+              <p className="text-center">Home</p>
             </div>
             <div className={classStyles}>
               <FaFileLines style={iconStyle}/>
-              <p>Resume</p>
+              <p className="text-center">Resume</p>
             </div>
             <div className={classStyles}>
               <FaGear style={iconStyle}/>
-              <p>Projects</p>
+              <p className="text-center">Projects</p>
             </div>
         </div>
     </div>
