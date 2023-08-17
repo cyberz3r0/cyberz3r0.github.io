@@ -10,7 +10,7 @@ const SideProfile = () => {
   return (
     <>
     <img src={Sam} alt="Sam" className="rounded-xl w-2/3 m-auto"/>
-    <div className="w-auto min-w-600 bg-[#3b3938] rounded-xl p-5 relative bottom-28 -z-10">
+    <div className="w-auto bg-[#3b3938] rounded-xl p-5 relative bottom-28 -z-10">
         <div className="text-center mt-28">
             <p className="text-[#f9f9f9] text-center mb-5 text-3xl font-bold">Samuel Reid</p>
             <p className="bg-[#a5a8a7] m-5 p-2 rounded-lg text-[#1a1918] text-lg inline ">Aspiring Software Developer</p>
