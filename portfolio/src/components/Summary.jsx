@@ -5,7 +5,7 @@ import {BiLogoFlask, BiLogoDjango,BiLogoPython,BiLogoJavascript,BiLogoMongodb, B
 import {SiMysql} from 'react-icons/si'
 const Summary = () => {
 
-    let icons={fontSize:"48px"}
+    let icons={fontSize:"72px", padding:"10px", backgroundColor:"black", borderRadius:"10px", color:"white"}
 
   return (
     <div>
