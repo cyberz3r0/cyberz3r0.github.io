@@ -5,20 +5,22 @@ import {BiLogoFlask, BiLogoDjango,BiLogoPython,BiLogoJavascript,BiLogoMongodb, B
 import {SiMysql} from 'react-icons/si'
 const Summary = () => {
 
-    let icons={fontSize:"72px", padding:"10px", backgroundColor:"black", borderRadius:"10px"}
+    let icons={fontSize:"72px", padding:"10px", backgroundColor:"black", borderRadius:"10px", margin:"5px 5px" }
     
     
     
-  return (
+    return (
         <>
-            <div>
-                <Nav/>
-                <div className="flex flex-col items-center md:flex-row justify-center">
-
-                    <div className="max-w-md min mr-10">
-                        <SideProfile />
+            <div className="mobile-nav lg:hidden bg-slate-900"><Nav /></div>
+            <div className="container mx-auto flex flex-col items-center justify-evenly lg:flex-row lg:justify-evenly lg:items-start ">
+                <div className="left w-4/5 lg:w-[400px] -mb-20 mt-2">
+                    <SideProfile/>
+                </div>
+                <div className="right w-4/5 lg:w-1/2">
+                    <div className="hidden lg:flex justify-end navbar mt-2">
+                        <Nav />
                     </div>
-                    <div className="max-w-screen-lg">
+                    <div className="content mt-24 lg:mt-4 ">
                         <div className="p-3 bg-[#3b3938] rounded-xl">
                             <p className="text-4xl text-white font-bold m-5">About Me</p>
                             <hr className="w-1/2 mx-5" />
@@ -30,10 +32,10 @@ const Summary = () => {
 
                             I am in the market for a job as a developer. Feel free to reach out to me to network or if you want to chat.</p>
                         </div>
-                        <div className=" flex flex-col p-3 bg-[#3b3938] rounded-xl mt-5 md: flex-row">
+                        <div className=" p-3 bg-[#3b3938] rounded-xl mt-5 ">
                             <p className="text-4xl text-white font-bold m-5">Skills</p>
                             <hr className="w-1/2 mx-5" />
-                            <div className="flex justify-between p-5 ">
+                            <div className="flex flex-wrap xl:flex-row xl:flex-nowrap justify-between p-5 ">
                                 <BiLogoFlask style={icons} color="#ffee93"/>
                                 <BiLogoDjango style={icons} color="#84dcc6"/>
                                 <BiLogoPython style={icons} color="#8DBCEA"/>
@@ -43,15 +45,11 @@ const Summary = () => {
                                 <BiLogoNodejs style={icons}color="#fb6f92"/>
                                 <BiLogoReact style={icons} color="#6e78ff"/>
                                 <BiLogoAws style={icons} color="#f68c70"/>
-
-
-
-
-
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </>
   )

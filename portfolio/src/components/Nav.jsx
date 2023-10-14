@@ -6,7 +6,7 @@ const Nav = () => {
   let classStyles= "h-16 bg-[#a5a8a7] text-[#1a1918] w-3/12 border-1 rounded-lg p-3 font-medium"
   return (
     <>
-    <div className="hidden md:flex justify-end">
+    <div className="hidden lg:flex justify-end">
       <div className=" h-26 rounded-xl p-5 bg-[#3b3938] w-96 flex justify-evenly">
           <div className={classStyles}>
             <FaHouseChimney style={iconStyle}/>
@@ -22,7 +22,7 @@ const Nav = () => {
           </div>
         </div>
     </div>
-    <div className="md:hidden">
+    <div className="lg:hidden justify-end md:mb-5 ">
       <div className="">
       <FaBars style={{color:"black", fontSize:"48px", margin:"0 0 10px auto", backgroundColor:"#a5a8a7", borderRadius:"10px", padding:"5px"}}/>
       </div>
