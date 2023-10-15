@@ -16,15 +16,17 @@ const Nav = () => {
             <FaFileLines style={iconStyle}/>
             <p className="text-center">Resume</p>
           </div>
-          <div className={classStyles}>
+          <a href="#projects" className={classStyles}>
             <FaGear style={iconStyle}/>
             <p className="text-center">Projects</p>
-          </div>
+          </a>
         </div>
     </div>
-    <div className="lg:hidden justify-end md:mb-5 ">
+    <div className="bg-[#1a1918] lg:hidden">
       <div className="">
-      <FaBars style={{color:"black", fontSize:"48px", margin:"0 0 10px auto", backgroundColor:"#a5a8a7", borderRadius:"10px", padding:"5px"}}/>
+        <button className="cursor-pointer">
+          <FaBars style={{color:"black", fontSize:"48px", backgroundColor:"#a5a8a7", borderRadius:"10px", padding:"5px"}}/>
+        </button>
       </div>
     </div>
     </>

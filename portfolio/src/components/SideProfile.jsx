@@ -1,5 +1,6 @@
 import React from 'react'
 import Sam from "../assets/Sam.jpg"
+import Resume from "../assets/Resume.pdf"
 import {FaGithub, FaLinkedin, FaSquarePhone, FaLocationDot, FaEnvelope, FaRegCalendarDays, FaDownload} from "react-icons/fa6"
 
 const SideProfile = () => {
@@ -10,7 +11,7 @@ const SideProfile = () => {
   return (
     <>
       
-      <div className="w-auto bg-[#3b3938] rounded-xl p-5 lg:mt-28 ">
+      <div className="w-auto bg-[#3b3938] rounded-b-xl lg:rounded-xl p-5 lg:mt-28 ">
         <img src={Sam} alt="Sam" className="rounded-xl w-4/5 mx-auto lg:relative bottom-28 lg:-mb-20"/>
           <div className="text-center mt-5 lg:mt-0">
               <p className="text-[#f9f9f9] text-center mb-5 text-3xl font-bold">Samuel Reid</p>
@@ -58,7 +59,11 @@ const SideProfile = () => {
                   </div>
               </div>
           </div>
-          <button className="rounded-xl bg-[#1a1918] p-3 my-4 text-white block mx-auto"> <FaDownload style={{display:"inline-block"}}/> Download Resume</button>
+          <a href={Resume} download>
+            <button className="rounded-xl bg-[#1a1918] p-3 my-4 text-white block mx-auto"> 
+              <FaDownload style={{display:"inline-block"}}/> Download Resume
+            </button>
+          </a>
       </div>
 
     
