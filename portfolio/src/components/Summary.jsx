@@ -14,20 +14,9 @@ const Summary = () => {
     return (
         <>  
             <div className="m-0 lg:container lg:mx-auto">
-                <div className="mobile-nav lg:hidden bg-slate-900 sticky top-0"><Nav /></div>
-
-                {/* ************************Remove if you get Navbar to work with mobile******************************************* */}
-
-                {/* <div id="mobile-menu" className="absolute top-0 bg-red-600 w-full text-5xl flex flex-col justify-content-center z-10">
-                    <button className="text-8xl self-end px-6">
-                    &times;
-                    </button>
-                    <nav className="flex flex-col min-h-screen items-center py-8">
-                        <a href="#home" className="w-full text-center py-6 hover:opacity-90">Home</a>
-                        <a href="#skills" className="w-full text-center py-6 hover:opacity-90">Skills</a>
-                        <a href="#projects" className="w-full text-center py-6 hover:opacity-90">Projects</a>
-                    </nav>
-                </div> */}
+                <div className="mobile-nav lg:hidden bg-slate-900 sticky top-0">
+                    <Nav />
+                </div>
                 <div className=" flex flex-col items-center justify-evenly lg:flex-row lg:justify-between lg:items-start ">
                     <div className="left w-4/5 lg:w-[500px] -mb-20 lg:mt-2">
                         <SideProfile/>

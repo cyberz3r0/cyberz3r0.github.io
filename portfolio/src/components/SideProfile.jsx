@@ -12,7 +12,7 @@ const SideProfile = () => {
     <>
       
       <div className="w-auto bg-[#3b3938] rounded-b-xl lg:rounded-xl p-5 lg:mt-28 ">
-        <img src={Sam} alt="Sam" className="rounded-xl w-4/5 mx-auto lg:relative bottom-28 lg:-mb-20"/>
+        <img id="#home" src={Sam} alt="Sam" className="rounded-xl w-4/5 mx-auto lg:relative bottom-28 lg:-mb-20"/>
           <div className="text-center mt-5 lg:mt-0">
               <p className="text-[#f9f9f9] text-center mb-5 text-3xl font-bold">Samuel Reid</p>
               <p className="bg-[#a5a8a7] m-5 p-2 rounded-lg text-[#1a1918] text-sm sm:text-lg inline ">Software Developer</p>
@@ -26,7 +26,7 @@ const SideProfile = () => {
               </div>
           </div>
           
-          <div className="bg-[#a5a8a7] rounded-xl p-5">
+          <div className="bg-[#a5a8a7] rounded-xl p-5 w-4/5 mx-auto">
               <div className="flex items-center ">
                   <FaSquarePhone style={{fontSize: "2.5em", marginRight:"10px", fill:"#f7a3b2", backgroundColor:"#1a1918", padding:"5px", borderRadius:"5px"}}/>
                   <div className="flex-wrap md:flex-nowrap">
@@ -47,7 +47,7 @@ const SideProfile = () => {
                   <FaEnvelope style={{fontSize: "2.5em", marginRight:"10px", fill:"#9b97d2", backgroundColor:"#1a1918", padding:"5px", borderRadius:"5px"}}/>
                   <div className="flex-wrap md:flex-nowrap">
                     <p>Email</p>
-                    <p className="text-lg">reidsl@icloud.com</p>
+                    <p className="text-lg break-all">reidsl@icloud.com</p>
                   </div>
               </div>
               <hr />
@@ -59,7 +59,7 @@ const SideProfile = () => {
                   </div>
               </div>
           </div>
-          <a href={Resume} download>
+          <a id="resume" href={Resume} download>
             <button className="rounded-xl bg-[#1a1918] p-3 my-4 text-white block mx-auto"> 
               <FaDownload style={{display:"inline-block"}}/> Download Resume
             </button>
