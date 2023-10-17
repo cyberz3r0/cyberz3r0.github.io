@@ -7,7 +7,7 @@ import { FaHouseChimney, FaFileLines, FaGear, FaBars } from "react-icons/fa6";
 
 const Nav = () => {
     let iconStyle = { color: "#1a1918", fontSize: "1.5em", margin: "0 auto" };
-    let classStyles= "h-16 bg-[#a5a8a7] text-[#1a1918] w-3/12 border-1 rounded-lg p-3 font-medium"
+    let classStyles= "h-16 bg-[#a5a8a7] text-[#1a1918] w-3/12 border-1 rounded-lg p-3 font-medium hover:bg-white"
     
 
     const navigation = [
@@ -16,10 +16,6 @@ const Nav = () => {
     { name: 'Projects', href: '#projects', icon: <FaGear style={iconStyle}/> },
     
     ]
-    
-    function classNames(...classes) {
-        return classes.filter(Boolean).join(' ')
-    }
     
     
     return (
@@ -31,7 +27,7 @@ const Nav = () => {
                     <div className="absolute inset-y-0 left-0 flex items-center lg:hidden ">
                         {/* Mobile menu button*/}
                         <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2
-                         text-white hover:bg-[#a5a8a7] hover:text-[#1a1918] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                        text-white hover:bg-[#a5a8a7] hover:text-[#1a1918] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                         <span className="absolute -inset-0.5" />
                         <span className="sr-only">Open main menu</span>
                         {open ? (
@@ -41,27 +37,28 @@ const Nav = () => {
                         )}
                         </Disclosure.Button>
                     </div>
+                    {/* desktop nav */}
                     <div className="hidden lg:flex justify-end">
                         <div className="h-26 rounded-xl p-5 bg-[#3b3938] w-96 flex justify-evenly">
-                                {navigation.map((item) => (
-                                    <div className={classStyles}>
-                                        <a
-                                            key={item.name}
-                                            href={item.href}
-                                            
-                                        >
-                                            {item.icon}
-                                            <p className="text-center">
-                                                {item.name}
-                                            </p>
-                                        </a>
-                                    </div>
-                                ))}
+                            {navigation.map((item) => (
+                                <div className={classStyles}>
+                                    <a
+                                        key={item.name}
+                                        href={item.href}
+                                        
+                                    >
+                                        {item.icon}
+                                        <p className="text-center">
+                                            {item.name}
+                                        </p>
+                                    </a>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
             </div>
-    
+            {/* mobile dropdown menu */}
             <Disclosure.Panel className="lg:hidden">
                 <div className="space-y-1 px-2 pb-3 pt-2">
                 {navigation.map((item) => (
@@ -69,10 +66,8 @@ const Nav = () => {
                     key={item.name}
                     as="a"
                     href={item.href}
-                    className={classNames('text-white hover:text-[#1a1918] hover:bg-[#a5a8a7]',
-                        'block rounded-md px-3 py-2 text-base font-medium'
-                    )}
-                    aria-current={item.current ? 'page' : undefined}
+                    className='text-white hover:text-[#1a1918] hover:bg-[#a5a8a7] 
+                    block rounded-md px-3 py-2 text-base font-medium'
                     >
                     {item.name}
                     </Disclosure.Button>
