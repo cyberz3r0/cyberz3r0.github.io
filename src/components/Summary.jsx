@@ -9,7 +9,7 @@ const Summary = () => {
 
     let icons={fontSize:"72px", padding:"10px", backgroundColor:"black", borderRadius:"10px", margin:"5px 5px" }
     let imgStyles = {width:"400px"}
-    
+    let date =  new Date().getFullYear();
     
     return (
         <>  
@@ -82,8 +82,8 @@ const Summary = () => {
                         </div>
                     </div>
                 </div>
-                <div className="footer w-4/5 lg:w-full mx-auto bg-black">
-                    <p>d</p>
+                <div className="footer w-4/5 lg:w-full mx-auto bg-black text-white">
+                    <p className="text-center">Copyright &copy; {date}</p>
                 </div>
             </div>
         </>

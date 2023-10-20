@@ -31,7 +31,7 @@ const SideProfile = () => {
                   <FaSquarePhone style={{fontSize: "2.5em", marginRight:"10px", fill:"#f7a3b2", backgroundColor:"#1a1918", padding:"5px", borderRadius:"5px"}}/>
                   <div className="flex-wrap md:flex-nowrap">
                     <p className="font-semibold">Phone</p>
-                    <p className="text-lg">123-456-7899</p>
+                    <p className="text-lg">347-977-0953</p>
                   </div>
               </div>
               <hr />
