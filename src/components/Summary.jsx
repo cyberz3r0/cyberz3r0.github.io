@@ -60,7 +60,7 @@ const Summary = () => {
                     <hr className="w-1/2 mx-5" />
                     <div className="projects flex flex-col items-center lg:flex-row lg:justify-between lg:flex-wrap p-5 bg-[#a5a8a7] rounded-xl m-5">
                         <div className="mt-5 w-[450px]">
-                            <img src={ComingSoon} alt="Coming Soon" style={imgStyles}/>
+                            <iframe width="450" height="253" src="https://www.youtube.com/embed/lCj9vanxvFI?si=PPe2iSD9q0TgjxD1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             <div>
                                 <span className="text-xl">Password Generator</span> <a className="underline text-blue-600" href="https://github.com/illustrae/Password-Gen">More Info</a>
                                 <p className="break-all">Description: Flask/Python app that generates passwords with login and reg and MySQL db.</p>
