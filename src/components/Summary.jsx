@@ -29,13 +29,13 @@ const Summary = () => {
                             <div className="p-3 bg-[#3b3938] rounded-xl">
                                 <p className="text-4xl text-white font-bold m-5">About Me</p>
                                 <hr className="w-1/2 mx-5" />
-                                <p className="text-black bg-[#a5a8a7] rounded-xl p-5 m-5">Motivated individual seeking a junior developer role with a company that will benefit from my technical knowledge in the IT field. I'm a uncut gem ready to be molded to shape. <br /><br />
+                                <p className="text-black bg-[#a5a8a7] rounded-xl p-5 m-5">Motivated individual seeking a IT helpdesk or junior developer role with a company that will benefit from my technical knowledge in the IT field. I'm a uncut gem ready to be molded to shape. <br /><br />
 
-                                My background is in customer service and technical support. I used to work in a high volume and fast-paced environment where I have collaborated with clients and team members in small teams. <br /> <br />
+                                My background is in customer service and technical support. I've worked in a high volume and fast-paced environments where I have collaborated with clients and team members across the United States and international. <br /> <br />
 
-                                My interest in programming actually started in college and I tried to purse self-teaching until I finally enrolled in Coding Dojo due to the COVID pandemic. I quickly found myself fascinated with coding and helping others understand what we learned that I ended up being a TA for the same bootcamp. Outside of coding, I like to play games, go on hikes, and watching movies. <br /><br />
+                                My interest in programming actually started in college and I tried to purse self-teaching until I finally enrolled in Coding Dojo due to the COVID pandemic. I quickly found myself fascinated with coding and helping others understand what we learned that I ended up being a TA for the same bootcamp. In my previous roles, I've had opportunities to utilize my programming knowledge to better enhance outcomes or shorten processes. This really helps fuel my desire to learn and attempt to enhance myself. Outside of coding, I like to play games, keep up with tech trends, play with my dog, go on hikes, and watching movies. <br /><br />
 
-                                I am in the market for a job as a developer. Feel free to reach out to me to network or if you want to chat.</p>
+                                I am in the market for a job. Feel free to reach out to me to network or if you want to chat.</p>
                             </div>
                             <div className="p-3 bg-[#3b3938] rounded-xl mt-5 ">
                                 <p className="text-4xl text-white font-bold m-5">Skills</p>
