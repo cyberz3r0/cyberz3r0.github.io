@@ -8,7 +8,7 @@ import ComingSoon from "../assets/img/coming_soon.jpg"
 const Summary = () => {
 
     let icons={fontSize:"72px", padding:"10px", backgroundColor:"black", borderRadius:"10px", margin:"5px 5px" }
-    let imgStyles = {width:"400px"}
+    let imgStyles = {height:"16.625rem", width:"100%"}
     let date =  new Date().getFullYear();
     
     return (
@@ -55,26 +55,26 @@ const Summary = () => {
                         </div>
                     </div>
                 </div>
-                <div className="p-3 bg-[#3b3938] rounded-t-xl mt-5 w-4/5 mx-auto lg:w-full">
-                    <p id="projects"className="text-4xl text-white font-bold m-5">Projects</p>
-                    <hr className="w-1/2 mx-5" />
-                    <div className="projects flex flex-col items-center lg:flex-row lg:justify-between lg:flex-wrap p-5 bg-[#a5a8a7] rounded-xl m-5">
-                        <div className="mt-5 w-[450px]">
-                            <iframe width="450" height="253" src="https://www.youtube.com/embed/lCj9vanxvFI?si=PPe2iSD9q0TgjxD1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div className="p-8 bg-[#3b3938] rounded-t-xl mt-5 w-4/5 mx-auto lg:w-full">
+                    <p id="projects"className="text-4xl text-white font-bold mb-5">Projects</p>
+                    <hr className="w-1/2 mb-5" />
+                    <div className="projects flex flex-col items-center lg:flex-row lg:justify-around lg:flex-wrap bg-[#a5a8a7] rounded-xl w-full">
+                        <div className="lg:mt-5 w-full p-10 lg:w-1/4 lg:p-0">
+                            <iframe className="w-full h-64"  src="https://www.youtube.com/embed/lCj9vanxvFI?si=PPe2iSD9q0TgjxD1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             <div>
                                 <span className="text-xl">Password Generator</span> <a className="underline text-blue-600" href="https://github.com/illustrae/Password-Gen">More Info</a>
                                 <p className="break-all">Description: Flask/Python app that generates passwords with login and reg and MySQL db.</p>
                             </div>
                         </div>
-                        <div className="mt-5 w-[450px]">
-                            <img src={ComingSoon} alt="Coming Soon" style={imgStyles}/>
+                        <div className="lg:mt-5 w-full p-5 lg:w-1/4 lg:p-0">
+                            <img className="w-full h-64"  src={ComingSoon} alt="Coming Soon"/>
                             <div>
                                 <span className="text-xl">Wordle Clone</span> <a className="underline text-blue-600" href="https://github.com/cyberz3r0/Wordle_Clone">More Info</a>
                                 <p className="break-all">Description: Serverless React Wordle Copy app</p>
                             </div>
                         </div>
-                        <div className="mt-5 w-[450px]">
-                            <img src={ComingSoon} alt="Coming Soon" style={imgStyles}/>
+                        <div className="lg:mt-5 w-full p-5 lg:w-1/4 lg:p-0">
+                            <img className="w-full h-64" src={ComingSoon} alt="Coming Soon"/>
                             <div>
                                 <span className="text-xl">HAF</span> <a className="" href="">More Info</a>
                                 <p className=" break-words">Description: Python GUI(Kivy) bill splitting app </p>
