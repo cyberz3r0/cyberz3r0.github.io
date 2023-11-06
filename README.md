@@ -1,5 +1,5 @@
 # Portfolio
 
-<pThis is my portfolio page using React. Showcase my projects and resume.</p>
+<p> This is my portfolio page using React. Showcase my projects and resume.</p>
 
 
