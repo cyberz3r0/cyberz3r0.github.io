@@ -11,8 +11,8 @@ const SideProfile = () => {
   return (
     <>
       
-      <div className="w-auto bg-[#3b3938] rounded-b-xl lg:rounded-xl p-5 lg:mt-28 ">
-        <img src={Sam} alt="Sam" className="rounded-xl w-4/5 mx-auto lg:relative bottom-28 lg:-mb-20"/>
+      <div className="w-auto bg-[#3b3938] lg:rounded-xl p-8 lg:mt-28 ">
+        <img src={Sam} alt="Sam" className="rounded-xl w-full lg:w-4/5 mx-auto lg:relative bottom-28 lg:-mb-20"/>
           <div className="text-center mt-5 lg:mt-0">
               <p className="text-[#f9f9f9] text-center mb-10 text-3xl font-bold">Samuel Reid</p>
               <p className="bg-[#a5a8a7] m-5 p-2 rounded-lg text-[#1a1918] text-sm sm:text-lg inline font-semibold">Software Developer</p>
@@ -26,7 +26,7 @@ const SideProfile = () => {
               </div>
           </div>
           
-          <div className="bg-[#a5a8a7] rounded-xl p-5 w-4/5 mx-auto">
+          <div className="bg-[#a5a8a7] rounded-xl p-5 mx-auto">
               <div className="flex items-center ">
                   <FaSquarePhone style={{fontSize: "2.5em", marginRight:"10px", fill:"#f7a3b2", backgroundColor:"#1a1918", padding:"5px", borderRadius:"5px"}}/>
                   <div className="flex-wrap md:flex-nowrap">

@@ -18,15 +18,15 @@ const Summary = () => {
                     <Nav />
                 </div>
                 <div className="flex flex-col items-center justify-evenly lg:flex-row lg:justify-between lg:items-start ">
-                    <div className="left w-4/5 lg:w-[500px] -mb-20 lg:mt-2">
+                    <div className="left w-full lg:w-[500px] -mb-20 lg:mt-2">
                         <SideProfile/>
                     </div>
-                    <div className="right w-4/5 lg:w-1/2">
+                    <div className="right w-full lg:w-1/2">
                         <div className="hidden lg:flex justify-end navbar mt-2">
                             <Nav />
                         </div>
                         <div className="content mt-24 lg:mt-3 ">
-                            <div className="p-3 bg-[#3b3938] rounded-xl">
+                            <div className="p-3 bg-[#3b3938] lg:rounded-xl">
                                 <p className="text-4xl text-white font-bold m-5">About Me</p>
                                 <hr className="w-1/2 mx-5" />
                                 <p className="text-black bg-[#a5a8a7] rounded-xl p-5 m-5">Motivated individual seeking a IT helpdesk or junior developer role with a company that will benefit from my technical knowledge in the IT field. I'm a uncut gem ready to be molded to shape. <br /><br />
@@ -37,7 +37,7 @@ const Summary = () => {
 
                                 I am in the market for a job. Feel free to reach out to me to network or if you want to chat.</p>
                             </div>
-                            <div className="p-3 bg-[#3b3938] rounded-xl mt-5 ">
+                            <div className="p-3 bg-[#3b3938] lg:rounded-xl mt-5 ">
                                 <p className="text-4xl text-white font-bold m-5">Skills</p>
                                 <hr className="w-1/2 mx-5" />
                                 <div className="flex flex-wrap xl:flex-row xl:flex-nowrap justify-between p-5 bg-[#a5a8a7] rounded-xl m-5">
@@ -55,7 +55,7 @@ const Summary = () => {
                         </div>
                     </div>
                 </div>
-                <div className="p-8 bg-[#3b3938] rounded-t-xl mt-5 w-4/5 mx-auto lg:w-full">
+                <div className="p-8 bg-[#3b3938] lg:rounded-t-xl mt-5 mx-auto w-full">
                     <p id="projects"className="text-4xl text-white font-bold mb-5">Projects</p>
                     <hr className="w-1/2 mb-5" />
                     <div className="projects flex flex-col items-center lg:flex-row lg:justify-around lg:flex-wrap bg-[#a5a8a7] rounded-xl w-full">
@@ -82,7 +82,7 @@ const Summary = () => {
                         </div>
                     </div>
                 </div>
-                <div className="footer w-4/5 lg:w-full mx-auto bg-black text-white">
+                <div className="footer w-full mx-auto bg-black text-white">
                     <p className="text-center">Copyright &copy; {date}</p>
                 </div>
             </div>
