@@ -1,5 +1,5 @@
 import React from 'react'
-import Sam from "../assets/myself.jpg"
+import Sam from "../assets/img/myself.jpg"
 import Resume from "../assets/Samuel_Reid_Resume.pdf"
 import {FaGithub, FaLinkedin, FaSquarePhone, FaLocationDot, FaEnvelope, FaRegCalendarDays, FaDownload} from "react-icons/fa6"
 

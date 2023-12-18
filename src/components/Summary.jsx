@@ -4,6 +4,7 @@ import SideProfile from './SideProfile'
 import {BiLogoFlask, BiLogoDjango,BiLogoPython,BiLogoJavascript,BiLogoMongodb, BiLogoNodejs,BiLogoAws,BiLogoReact} from 'react-icons/bi'
 import {SiMysql} from 'react-icons/si'
 import ComingSoon from "../assets/img/coming_soon.jpg"
+import Wordle from "../assets/img/wordle_clone.png"
 
 const Summary = () => {
 
@@ -67,7 +68,7 @@ const Summary = () => {
                             </div>
                         </div>
                         <div className="lg:mt-5 w-full p-5 lg:w-1/4 lg:p-0">
-                            <img className="w-full h-64"  src={ComingSoon} alt="Coming Soon"/>
+                            <img className="w-full h-64"  src={Wordle} alt="Coming Soon"/>
                             <div>
                                 <span className="text-xl">Wordle Clone</span> <a className="underline text-blue-600" href="https://github.com/cyberz3r0/Wordle_Clone">More Info</a>
                                 <p className="break-all">Description: Serverless React Wordle Copy app</p>
